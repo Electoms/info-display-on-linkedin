@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Info display on Linkedin",
+    "description": "display person info on linkedin profile",
+    "background":{
+        "service_worker": "scripts/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.linkedin.com/*"],
+            "js": ["scripts/content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "options.html"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "permissions": [
+        "activeTab","storage"
+    ]
+}

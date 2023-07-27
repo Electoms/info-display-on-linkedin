@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/options.css">
+    <title>popup</title>
+    <style>
+
+        </style>
+</head>
+<body>
+    <main id="main">
+        <form id="main-form">
+            <label for="api-key">key</label>
+            <input type="text" name="" id="api-key">
+            <label for="api-secret">secret</label>
+            <input type="text" name="" id="api-secret">
+            <label for="add-people-endpoint">add endpoint</label>
+            <input type="text" name="" id="add-people-endpoint">
+            <label for="check-people-endpoint">check endpoint</label>
+            <input type="text" name="" placeholder="https://www.page.com/[tag]/people/?get=[tag]" id="check-people-endpoint">
+            <label for="fetch-people-info-endpoint">fetch info endpoint</label>
+            <input type="text" name="" placeholder="https://www.page.com/[id]/data/?identificator=[id]" id="fetch-people-info-endpoint">
+            
+        </form>
+        <input type="button" id="save" value="Zapisz Ustawienia">
+        
+        <script src="scripts/options.js"></script>
+    </main>
+</body>
+</html>

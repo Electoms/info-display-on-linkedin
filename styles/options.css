@@ -1,0 +1,48 @@
+
+body{
+    padding-top: 0.5rem;
+    width: 500px;
+    background: #230931;
+}
+*{
+    color:#f5f2f5;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: grid;
+    font-size: 0.875rem;
+    grid-template-columns: 35% 65%;
+    row-gap: 1rem;
+}
+input{
+    border: solid 1px #f5f2f5;
+}
+input[type="text"]{
+    padding: 0.125rem;
+    background: inherit;
+}
+input[type="button"]{
+    &:hover{
+        background: #f5f2f5;
+        color: #230931;
+    }
+    &:active{
+        background: #433143;
+        color: #f5f2f5;
+    }
+    transition: all 200ms;
+    width: 35%;
+    font-weight: bolder;
+    padding: 0.25rem;
+    margin: 1rem auto;
+    background: #433143;
+}
+h4{
+    background: #ffffff05;
+    color: #00f000;
+    text-align: center;
+    margin-top: 0.1rem;
+}
